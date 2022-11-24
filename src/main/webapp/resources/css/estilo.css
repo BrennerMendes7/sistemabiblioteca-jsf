@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+	margin-left: 810px;
+	height: 300px;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.locador-coluna-acoes {
+	width: 100px;
+}
+
+.locador-coluna-email {
+	width: 300px;
+}
+
+.locador-coluna-idade {
+	width: 90px;
+}
+
+.locador-coluna-nascimento {
+	width: 130px;
+}
+
+.tabela-exportacoes {
+	float:right;
+	padding-top: 2px;
+}
+
+.tabela-exportacoes a {
+	margin-right: 5px;	
+}
+
+.ui-filter-column .ui-column-customfilter .custom-filter {
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+.year-spinner input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.ui-menuitem-icon {
+	text-align: center;
+	margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+input:hover, input:focus {
+    outline: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.ui-menu .ui-menu-list .ui-menuitem {
+	display: flex;
+}
+
+.bandeira-idioma {
+	width: 30px;
+	margin-right: 10px;
+	
+}
+
+.categoria-coluna-acoes {
+	width: 100px;
+}
+
+.emprestimo-coluna-acoes {
+	width: 100px;
+}
+
+.emprestimo-coluna-dataEmprestimo {
+	width: 170px;
+}
+
+.emprestimo-coluna-dataDevolucao {
+	width: 170px;
+}
+
+.livro-coluna-acoes {
+	width: 100px;
+}
+
+.livro-coluna-prateleira {
+	width: 150px;
+}
+
+.usuario-coluna-acoes {
+	width: 100px;
+}

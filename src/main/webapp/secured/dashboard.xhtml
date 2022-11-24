@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<ui:composition template="/WEB-INF/templates/layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="titulo">Biblioteca Digital</ui:define>
+
+	<ui:define name="conteudo">
+
+		<h:graphicImage library="imagens" name="biblioteca.png"
+			styleClass="logo" />
+
+		<div class="ui-g">
+			<div class="ui-g-12 ui-md-5"
+				style="border: 5px solid #B2BBBF; border-radius: 25px; margin: 0 auto;">
+				<p:pieChart model="#{dashboardController.livrosPorCategoriaModel}" />
+			</div>
+			<div class="ui-g-12 ui-md-5" style="border: 5px solid #B2BBBF; border-radius: 25px; margin: 0 auto;">
+			   <p:pieChart model="#{chartEmprestimoController.emprestimosPorLocadorModel}" />
+			</div>
+		</div>
+	</ui:define>
+
+
+
+</ui:composition>

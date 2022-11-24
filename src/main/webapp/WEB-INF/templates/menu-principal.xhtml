@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:form>
+		<p:menubar>
+			<p:submenu label="#{msg['menu.gerenciamento']}" icon="fa fa-wrench">
+				<p:menuitem value="#{msg['menuitem.locador']}" outcome="/secured/locador" icon="fa fa-user" />
+				<p:menuitem value="#{msg['menuitem.livro']}" outcome="/secured/livro" icon="fa fa-book" />
+				<p:menuitem value="#{msg['menuitem.categoria']}" outcome="/secured/categoria" icon="fa fa-info" />
+				<p:menuitem value="#{msg['menuitem.emprestimo']}" outcome="/secured/emprestimo"
+					icon="fa fa-gavel" />
+				<p:menuitem value="#{msg['menuitem.usuario']}" outcome="/secured/usuario" icon="fa fa-user" />	
+			</p:submenu>
+			<p:menuitem value="#{msg['menu.dashboard']}" outcome="/secured/dashboard" icon="fa fa-home" />
+
+			<f:facet name="options" >
+			
+			<h:commandButton 
+					title="#{msg['button.brazil']}"
+					styleClass="bandeira-idioma"
+					image="#{resource['imagens/brazil-flag.png']}">
+					
+					<f:setPropertyActionListener 
+						value="pt" 
+						target="#{idiomaController.idiomaSelecionado}" />
+				</h:commandButton>
+				
+			<h:commandButton 
+					title="#{msg['button.england']}"
+					styleClass="bandeira-idioma"
+					image="#{resource['imagens/england-flag.png']}">
+					
+					<f:setPropertyActionListener 
+						value="en" 
+						target="#{idiomaController.idiomaSelecionado}" />
+				</h:commandButton>
+			
+				<p:commandButton value="#{msg['facet.sair']} / #{loginController.email}" icon="fa fa-power-off"
+				 action="#{loginController.logout}" styleClass="botao-sair"/>
+			</f:facet>
+		</p:menubar>
+	</h:form>
+     
+	
+</html>
